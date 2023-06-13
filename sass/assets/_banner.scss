@@ -1,0 +1,99 @@
+/* - - - - - - - - - - - - - 
+- - - - - -BANNER - - - - -
+- - - - - - - - - - - - -  */
+
+/* Subtitulos Banner png*/
+.subtitleBanner {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #8b691779;
+    z-index: 1;
+}
+
+/* Banner png*/
+.Banner {
+    width: 100%;
+    height: 98.5vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.png);
+    background-size: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .img {
+        flex: 1 1 400px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        flex: 1 1 400px;
+        margin-left: 60px;
+    }
+}
+
+/* Contenido h1 - h2 Banner*/
+.content {
+    h1 {
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    h2 {
+        font-size: 60px;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        font-weight: bold;
+    }
+}
+
+/* Botones Banner*/
+.content {
+    p {
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .btn {
+        width: 110px;
+        height: 38px;
+        background-color: #573818;
+        color: white;
+    }
+}
+
+/* Media queris banner*/
+@media screen and (max-width: 800px) {
+    .content h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .home {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .home {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .content {
+
+        h2,
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

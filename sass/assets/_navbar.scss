@@ -1,0 +1,61 @@
+/* - - - - - - - - - - - - - 
+- - - - - -HEADER - - - - -
+- - - - - - - - - - - - -  */
+
+/* Estilo header */
+
+header {
+    background-color: #FBD06E;
+    height: 110px;
+}
+
+/* - - - - - - - - - - - - - 
+  - - - - - -NAVBAR - - - - -
+  - - - - - - - - - - - - -  */
+
+/* Estilo navbar */
+
+nav {
+    height: 100%;
+    font-weight: 1000;
+    z-index: 2;
+}
+
+/* Conteiners de links nav */
+
+.LiContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+/* tamanio logo en el nav*/
+
+.logoPanaderia,
+.imagen-logo img {
+    height: 90px;
+    width: 90px;
+}
+
+/* modificaciones nav de bootstrap */
+
+.color-nav {
+    background-color: #FBD06E;
+    padding: 30px;
+}
+
+/* Tamanio texto nav*/
+.sizeTextNav a {
+    font-size: 20px;
+}

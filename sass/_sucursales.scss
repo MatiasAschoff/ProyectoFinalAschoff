@@ -1,0 +1,44 @@
+/* - - - - - - - - - - - - - 
+- - - - - -MAPA - - - - -
+- - - - - - - - - - - - -  */
+
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mapPadding {
+    padding: 30px;
+}
+
+/* Animacion cambio texto ubicacion*/
+.changeLocation::after {
+    content: ' ';
+    color: rgba(161, 109, 14, 1);
+    animation: changeLocation 10s infinite linear;
+    font-weight: bold;
+}
+
+@keyframes changeLocation {
+    0% {
+        content: "Córdoba";
+    }
+
+    20% {
+        content: "Santa Fe";
+    }
+
+    50% {
+        content: "Buenos Aires";
+    }
+
+    60% {
+        content: "Tucumán";
+    }
+
+    100% {
+        content: "Salta";
+    }
+}

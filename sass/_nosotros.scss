@@ -1,0 +1,96 @@
+/* Imagen fundadores*/
+.imagenFundadores {
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.fundadorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: auto;
+}
+/* Texto fundadores*/
+.subtituloFundadores {
+  font-size: 35px;
+  text-align: center;
+  background-color: #804000;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  text-shadow: 0 0 6px rgba(11, 2, 1, 1.3);
+
+  &:hover {
+    background-color: rgb(232, 198, 94);
+    color: #000000;
+    font-weight: bold;
+  }
+}
+/* Fondo cuadricula contenedor acordion*/
+.acordionfondo {
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+/* Animacion cambio texto nosotros*/
+.changenosotros::after {
+  content: ' ';
+  color: rgba(161, 109, 14, 1);
+  animation: changenosotros 10s infinite linear;
+  font-weight: bold;
+}
+
+@keyframes changenosotros {
+  0% {
+    content: "Junto a vos";
+  }
+
+  20% {
+    content: "Con compromiso";
+  }
+
+  50% {
+    content: "Creciendo";
+  }
+
+  60% {
+    content: "Mejorando";
+  }
+
+  100% {
+    content: "Apasionados";
+  }
+}
+
+/* - - - - - - - - - - - - - 
+- - - - - -ACORDION - - - - -
+- - - - - - - - - - - - -  */
+
+.acordionConteiner h2 button {
+  font-size: 35px;
+  font-weight: bold;
+  background-color: beige;
+  text-shadow: 0 0 6px rgba(11, 2, 1, 1.3);
+  color: #fff309;
+
+  &:hover {
+    background-color: rgb(159, 126, 26);
+    color: #fff309;
+  }
+}
+
+.TextacordionConteiner {
+  font-size: 25px;
+  background-color: beige;
+  font-weight: bold;
+}
+
+.fondoAcordion {
+  background-image: url("../img/removel.png");
+  background-size: cover;
+  background-position: center;
+}

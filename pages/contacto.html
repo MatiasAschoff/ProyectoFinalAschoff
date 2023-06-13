@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PanaderiaDelicias</title>
+    <meta name="description" content="Podes contactar con nostros a través de las principales redes sociales o via mail. Su consulta no nos molesta">
+    <meta name="keywords" content="contacto, facebook, instagram, mail, tik-tok, twitter, formulario-de-contacto">
+    <title>Panaderia artesanal Delicias - contacto</title>
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +18,10 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--css main-->
     <link rel="stylesheet" href="../css/estilos.css">
-
+    <!--icono-->
+    <link rel="icon" href="../img/facturaIcono.png">
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,43 +62,57 @@
         </nav>
     </header>
     <main>
-        <h1> Panaderia Delicias</h1>
+        <div class="row Banner"><!--fila 1 col 1-->
+            <div class="col-lg-6 col-md-12 col-sm-12 content"data-aos="zoom-out-right">
+                <h1>Panadería Delicias</h1>
+                <h2 class="subtitleBanner">Contactanos por <span class="changeRedes"></span></h2>
+                <p>Un sabor fácil de reconocer</p>
+            </div>
+            <div class="img col-lg-6 col-md-12 col-sm-12"data-aos="zoom-out-left">
+                <img src="..//img/redes2.png" alt="redes sociales">
+            </div>
+        </div>
+    
+        <section class="fondo mapPadding ">
+            <article class="row">
+    
+                <!-- formulario-->
+    
+                <form class="col-lg-4 col-md-6 col-sm-4"data-aos="fade-up"
+                data-aos-duration="1500">
+                    <h2 class="TextCont3">Formulario de Contacto</h2>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"><br><br>
+    
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido"><br><br>
+    
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select><br><br>
+    
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad"><br><br>
+    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email"><br><br>
+    
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+        </section>
     </main>
+        <!--ArrowUp-->
+        <a href="#" class="arrow"><i><img src="../img/up-arrow.png" alt="" width="50px"></i></a>
+    
+        <!-- boton de wp -->
+        <div class="sticky"><a href="./contacto.html"><img class="logoWp"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Whatsapp_logo_svg.png/600px-Whatsapp_logo_svg.png"
+                alt="logoWp"></div></a>
 
-
-    <section class="infoTienda fondo"><br><br>
-        <article>
-            <h2 class="subtitulo">Formulario de Contacto</h2>
-            <!-- formulario-->
-            <br><br>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br><br>
-
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido"><br><br>
-
-                <label for="sexo">Sexo:</label>
-                <select id="sexo" name="sexo">
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Otro</option>
-                </select><br><br>
-
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad"><br><br>
-
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email"><br><br>
-
-                <input type="submit" value="Enviar">
-            </form>
-            <br><br>
-        </article>
-    </section>
-
-    <!-- boton de wp -->
-    <div class="sticky"><img class="logoWp"src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Whatsapp_logo_svg.png/600px-Whatsapp_logo_svg.png" alt="logoWp"></div>
     <!-- Footer-->
     <footer>
         <div class="row">
@@ -112,9 +131,13 @@
     </footer>
     <!-- scrip Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- animation links -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

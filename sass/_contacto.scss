@@ -1,0 +1,89 @@
+/* - - - - - - - - - - - - - 
+- - - - - -FORMULARIO - - - - -
+- - - - - - - - - - - - -  */
+
+/* Estilos generales para el formulario */
+
+form {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-weight: 100%;
+    background-color: rgb(202, 221, 222);
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 400px;
+    margin: 0 auto;
+    /* Estilos para el título del formulario */
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        color: #333333;
+    }
+    /* Estilos para los campos de entrada */
+    input,
+    select {
+        padding: 10px;
+        border: 2px solid #080808;
+        border-radius: 5px;
+        font-size: 18px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    /* Estilos para el botón de enviar */
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+    /* Estilos para los mensajes de error */
+    .error {
+        color: red;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Animacion cambio texto redes sociales*/
+.changeRedes::after {
+    content: ' ';
+    color: rgba(161, 109, 14, 1);
+    animation: changeRedes 10s infinite linear;
+    font-weight: bold;
+}
+
+@keyframes changeRedes {
+    0% {
+        content: "Whatsapp";
+    }
+
+    20% {
+        content: "Facebook";
+    }
+
+    50% {
+        content: "Instagram";
+    }
+
+    60% {
+        content: "_Twitter_";
+    }
+
+    100% {
+        content: "__Mail__";
+    }
+}
+
+/* Estilo 3 texto del formulario*/
+.TextCont3 {
+    text-align: center;
+    background-color: #dbb553b0;
+    font-weight: bold;
+
+    &:hover {
+        background-color: rgb(110, 68, 42);
+        color: white;
+        filter: brightness(1.2);
+    }
+}

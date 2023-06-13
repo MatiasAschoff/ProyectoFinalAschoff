@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PanaderiaDelicias</title>
+    <meta name="description" content="Conoce la historia detrás de esta panaderia fundada en 1988 y nuestra evolución a lo largo de estos años">
+    <meta name="keywords" content="fundación, leudando-una-marca, actualidad, fundadores, Marta-Preto, Jorge-Mignon">
+    <title>Panaderia artesanal Delicias - nosotros</title>
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +18,10 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--css main-->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!--icono-->
+    <link rel="icon" href="../img/facturaIcono.png">
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,61 +62,103 @@
         </nav>
     </header>
     <main>
-        <h1> Panaderia Delicias</h1>
+        <div class="row Banner"><!--fila 1 col 1-->
+            <div class="col-lg-6 col-md-12 col-sm-12 content"data-aos="zoom-out-right">
+                <h1>Panadería Delicias</h1>
+                <h2 class="subtitleBanner">35 años <span class="changenosotros"></span></h2>
+                <p>Un sabor fácil de reconocer</p>
+    
+            </div>
+            <div class="img col-lg-6 col-md-12 col-sm-12"data-aos="zoom-out-left"><!--fila 1 col 2-->
+                <img src="..//img/budin nosotros.png" alt="budin de frutas">
+            </div>
+        </div>
+        <!--Acordion con historia panaderia-->
+        <article class="row acordionfondo"data-aos="fade-up"
+        data-aos-duration="1500"><!--fila 2 col 1-->
+            <div class="accordion accordion-flush col-lg-6 col-md-12 col-sm-12 acordionConteiner"data-aos="fade-up"
+            data-aos-duration="1500"
+                id="accordionFlushExample">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-headingOne">
+                        <button class="accordion-button collapsed  fondoAcordion " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Fundación
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body acordionConteiner TextacordionConteiner"> En 1988 Marta Preto, una
+                            especialista pastelera,
+                            y Jorge Mignon, un administrador de empresas, decidieron unir sus talentos y crear una panadería
+                            que ofreciera productos de alta calidad y sabor excepcional.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="flush-headingTwo">
+                        <button class="accordion-button collapsed fondoAcordion " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Leundando una marca
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body TextacordionConteiner">Desde un comienzo se decidió utilizar solo los
+                            mejores ingredientes y
+                            técnicas de
+                            horneado para producir panes, pasteles, galletas y otros productos horneados que superaran las
+                            expectativas
+                            de sus clientes. Gracias a su pasión por la excelencia y su enfoque en la satisfacción del
+                            cliente,
+                            Delicias
+                            rápidamente se convirtió en un éxito en su comunidad local.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="flush-headingThree">
+                        <button class="accordion-button collapsed fondoAcordion acordionConteiner " type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Actualidad
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body TextacordionConteiner"> En la actualidad sigue siendo un negocio
+                            familiar, dirigido por los hijos de Marta
+                            y Jorge,
+                            quienes conservan la tradición de excelencia y pasión por la panadería.</div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-6 col-md-12 col-sm-12 fundadorContainer "data-aos="fade-up"
+            data-aos-duration="1500"><!--fila 2 col 2-->
+                <div><img class=" img-fluid " src="../img/alfajorChocolate2.png" alt="Fundadora"></div>
+            </div>
+    
+    
+            <div class="col-lg-12 col-md-12 col-sm-12  imagenConteiner subtituloFundadores"data-aos="fade-up"
+            data-aos-duration="1500"><!--fila 2 col 3-->
+                <h2 class="">Marta Preto - Jorge Mignon</h2>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 fundadorContainer "data-aos="fade-up"
+            data-aos-duration="1500"><!--fila 2 col 4-->
+                <div><img class="imagenFundadores img-fluid" src="../img/fundadora.jpg" alt="Fundadora"></div>
+                <div><img class="imagenFundadores img-fluid" src="../img/fundador.jpg" alt="Fundador"></div>
+            </div>
+        </article>
     </main>
-    <!--Grid system-->
-    <div class="row infoTienda"><!--fila 1 col 1-->
-        <div class="col-lg-12 col-md-12 col-sm-12 ">
-            <h2 class="subtitulo">Historia</h2>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 textoConteiner">
-            <br>
-            <p>
-                La historia de Delicias comienza hace 35 años, cuando Marta Preto, una especialista pastelera,
-                y Jorge Mignon, un administrador de empresas, decidieron unir sus talentos y crear una panadería
-                que ofreciera productos de alta calidad y sabor excepcional.
-            </p>
-            <br>
-            <p>
-                Desde el primer día, Marta y Jorge se comprometieron a utilizar solo los mejores ingredientes y
-                técnicas de
-                horneado para producir panes, pasteles, galletas y otros productos horneados que superaran las
-                expectativas
-                de sus clientes. Gracias a su pasión por la excelencia y su enfoque en la satisfacción del cliente,
-                Delicias
-                rápidamente se convirtió en un éxito en su comunidad local.
-            </p>
-            <br>
-            <p>
-                Hoy en día, la panadería Delicias sigue siendo un negocio familiar, dirigido por los hijos de Marta
-                y Jorge,
-                quienes conservan la tradición de excelencia y pasión por la panadería. Aunque ha crecido mucho
-                desde sus humildes
-                comienzos, Delicias sigue manteniendo los mismos valores que hicieron que la panadería fuera exitosa
-                desde el principio:
-                calidad, sabor y satisfacción del cliente.
-            </p>
-            <br>
-            <p>
-                ¡Gracias por ser parte de la historia de Delicias! seguiremos siendo su panadería favorita durante
-                muchos años más.
-            </p>
-            <br>
-            <br>
-        </div>
-    </div>
-    <div class="row fondo"><!--fila 1 col 2-->
-        <div class="col-lg-12 col-md-12 col-sm-12  imagenConteiner ">
-            <h2 class="subtitulo">Marta Preto - Jorge Mignon</h2>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 fundadorContainer ">
-            <div><img class="imagenFundadores img-fluid" src="../img/fundadora.jpg" alt="Fundadora"></div>
-            <div><img class="imagenFundadores img-fluid" src="../img/fundador.jpg" alt="Fundador"></div>
-        </div>
-    </div>
+     <!--ArrowUp-->
+     <a href="#" class="arrow"><i><img src="../img/up-arrow.png" alt="" width="50px"></i></a>
+    
+     <!-- boton de wp -->
+     <div class="sticky"><a href="./contacto.html"><img class="logo"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Whatsapp_logo_svg.png/600px-Whatsapp_logo_svg.png"
+             alt="logo"></a>
+     </div>
 
-    <!-- boton de wp -->
-    <div class="sticky"><img class="logo"src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Whatsapp_logo_svg.png/600px-Whatsapp_logo_svg.png"alt="logo"></div>
     <!-- Footer-->
     <footer>
         <div class="row">
@@ -129,8 +177,13 @@
     </footer>
     <!-- scrip Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- animation links -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+ </script>
 </body>
 
 </html>

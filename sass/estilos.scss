@@ -1,0 +1,33 @@
+@use 'index';
+@use 'nosotros';
+@use 'nuestrasDelicias';
+@use 'cafeteria';
+@use 'sucursales';
+@use 'contacto';
+@use 'assets/footer';
+@use 'assets/arrowSticky';
+@use 'assets/navbar';
+@use 'assets/banner';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Konkhmer Sleokchher', cursive;
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* - - - - - - - - - - - - - 
+- - - - - -FONDOS - - - - -
+- - - - - - - - - - - - -  */
+
+.fondo {
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+main {
+  background-color: #332105;
+}
