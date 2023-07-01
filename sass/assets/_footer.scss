@@ -1,12 +1,24 @@
 /* - - - - - - - - - - - - - 
+- - - - - -MIXIN - - - - -
+- - - - - - - - - - - - -  */
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Variable tamanio icono*/
+$size50px: 50px;
+
+/* - - - - - - - - - - - - - 
 - - - - - -FOOTER - - - - -
 - - - - - - - - - - - - -  */
 
 /* tamanio de logos en el footer*/
 
 .logoConteiner {
-    height: 50px;
-    width: 50px;
+    height: $size50px;
+    width: $size50px;
 }
 
 /* tamanio de logos en el footer*/
@@ -32,9 +44,7 @@ footer {
 }
 
 .redesSocialesContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     flex-wrap: wrap;
     max-width: 100%;
 

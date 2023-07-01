@@ -1,3 +1,5 @@
+/* Variable tamanio icono*/
+$size50px: 50px;
 /* - - - - - - - - - - - - - 
 - - - - - -STICKY - - - - -
 - - - - - - - - - - - - -  */
@@ -5,15 +7,14 @@
 /* Logo de whatsapp */
 
 .logoWp {
-    width: 50px;
-    height: 50px;
+    width: $size50px;
+    height: $size50px;
 }
 
 /* Logo de whatsapp */
 
 .sticky {
-    height: 50px;
-    width: 50px;
+    @extend .logoWp;
     right: 30px;
     bottom: 15%;
     z-index: 2;
@@ -27,12 +28,12 @@
 .arrow {
     position: fixed;
     background-color: rgba(161, 109, 14, 1);
-    border-radius: 50px;
-    height: 50px;
+    border-radius: $size50px;
+    height: $size50px;
     bottom: 40px;
-    right: 50px;
+    right: $size50px;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
+    line-height: $size50px;
     z-index: 2;
 }

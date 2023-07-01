@@ -1,3 +1,11 @@
+/* - - - - - - - - - - - - - 
+- - - - - -MIXIN - - - - -
+- - - - - - - - - - - - -  */
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Imagen fundadores*/
 .imagenFundadores {
   border-radius: 50%;
@@ -5,9 +13,7 @@
 }
 
 .fundadorContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   margin: auto;
   flex-wrap: wrap;
   max-width: auto;
@@ -34,9 +40,7 @@
   background-size: cover;
   background-position: center;
   padding: 10px;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
+  @include flexCenter;
 }
 
 /* Animacion cambio texto nosotros*/

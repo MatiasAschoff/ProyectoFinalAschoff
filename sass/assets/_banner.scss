@@ -1,10 +1,27 @@
 /* - - - - - - - - - - - - - 
+- - - - - -MIXIN - - - - -
+- - - - - - - - - - - - -  */
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  font-weight + textShadow*/
+@mixin fontText {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+/* Variable color blanco*/
+$colorWhite: white;
+
+
+/* - - - - - - - - - - - - - 
 - - - - - -BANNER - - - - -
 - - - - - - - - - - - - -  */
 
 /* Subtitulos Banner png*/
 .subtitleBanner {
-    color: white;
+    color: $colorWhite;
     text-align: center;
     margin-top: 40px;
     background-color: #8b691779;
@@ -15,11 +32,9 @@
 .Banner {
     width: 100%;
     height: 98.5vh;
-    display: flex;
+    @include flexCenter;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.png);
     background-size: auto;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 
     .img {
@@ -39,33 +54,30 @@
 /* Contenido h1 - h2 Banner*/
 .content {
     h1 {
-        color: white;
+        color: $colorWhite;
         font-size: 60px;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
+        @include fontText;
     }
 
     h2 {
         font-size: 60px;
-        color: white;
-        text-shadow: 1px 1px 1px black;
-        font-weight: bold;
+        color: $colorWhite;
+        @include fontText;
     }
 }
 
 /* Botones Banner*/
 .content {
     p {
-        color: white;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
+        color: $colorWhite;
+        @include fontText;
     }
 
     .btn {
         width: 110px;
         height: 38px;
         background-color: #573818;
-        color: white;
+        color: $colorWhite;
     }
 }
 
